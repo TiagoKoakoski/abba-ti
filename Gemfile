@@ -51,6 +51,9 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   gem 'rspec-rails'
+  gem 'factory_bot_rails' # Para criar dados de teste
+  gem 'faker' # Para gerar dados fictícios
+  gem 'database_cleaner-active_record' # Para limpar o banco de dados entre testes
 end
 
 group :development do
