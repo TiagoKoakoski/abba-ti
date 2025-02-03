@@ -1,0 +1,10 @@
+<h1><%= @company.name %></h1>
+<div>
+  <h2>
+    CNPJ: <%= @company.cnpj %>
+  </h2>
+</div>
+
+<%= link_to "Voltar", companies_path %>
+<%= link_to "Editar", edit_company_path(@company) %>
+<%= button_to "Delete", @company, method: :delete, data: { turbo_confirm: "Tem certeza que gostaria de apagar?" } %>
